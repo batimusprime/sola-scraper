@@ -14,6 +14,3 @@ with open(outputname, 'w') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter=' ', quotechar='|', quoting=csv.QUOTE_MINIMAL)
     for link in soup.findAll('a'):
         images.append(link.get('href'))
-#        print images
- #       print link.get('href')
- #       csvwriter.writerow(link.get('href'))
